@@ -28,7 +28,7 @@ class ModelInput(BaseModel):
     rainfall: float
 
 # Load the model from a pickle file
-model = pickle.load(open("model/model1.pkl", "rb"))
+model = pickle.load(open("../model/model1.pkl", "rb"))
 
 # Prediction endpoint
 @app.post('/predict')
